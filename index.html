@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>jQuery connecting with Spring Boot Rest</title>
+	<!-- Bootstrap CSS Style -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Font-awesome CSS Style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main CSS Style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div id="container">
+		<form id="mForm">
+			<fieldset>
+			  <!-- Name block div -->
+			  <div class="form-group">
+			  	<label for="name">Nombre</label>
+			    <input type="text" class="form-control" id="name" minlength="0" size="50" name="name" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z\s\.áÁéÉíÍóÓúÚ]+"
+			    maxlength="50">
+			  </div>
+			  <!-- Age block div -->
+			  <div class="form-group">
+			  	<label for="age">Edad</label>
+			    <input type="number" class="form-control" id="age" min="18" max="99" name="age" required="required">
+			  </div>
+			  <!-- Country block div -->
+			  <div class="form-group">
+			  	<label for="country">País</label>
+			    <select class="form-control" id="country" name="country" required>
+			      <option value="">Selecciona un valor</option>
+			    </select>
+			  </div>
+			  <!-- State block div -->
+			  <div class="form-group">
+			  	<label for="state">Estado</label>
+			    <select class="form-control" id="state" name="state" required>
+			    </select>
+			  </div>
+			  <!-- City block div -->
+			  <div class="form-group">
+			  	<label for="city">Ciudad</label>
+			    <select class="form-control" id="city" name="city" required>
+			    </select>
+			  </div>
+			  <!-- Botton triggers the form -->
+			  <button type="submit" class="btn btn-primary" id="sendForm">Enviar</button>
+		  </fieldset>
+		</form>
+	</div>
+	<!-- jQuery JS Reference -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
